@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MyB2CDbDataSet" targetNamespace="http://tempuri.org/MyB2CDbDataSet1.xsd" xmlns:mstns="http://tempuri.org/MyB2CDbDataSet1.xsd" xmlns="http://tempuri.org/MyB2CDbDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="MyB2CDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MyB2CDbConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.MyB2CDbConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_OrdersTableAdapter" GeneratorDataComponentClassName="View_OrdersTableAdapter" Name="View_Orders" UserDataComponentName="View_OrdersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MyB2CDbConnectionString (Web.config)" DbObjectName="MyB2CDb.dbo.View_Orders" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, OrderNo, Customerid, Address, totalMoney, salesincome, username, tel, mobile FROM dbo.View_Orders</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="OrderNo" DataSetColumn="OrderNo" />
+              <Mapping SourceColumn="Customerid" DataSetColumn="Customerid" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="totalMoney" DataSetColumn="totalMoney" />
+              <Mapping SourceColumn="salesincome" DataSetColumn="salesincome" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="tel" DataSetColumn="tel" />
+              <Mapping SourceColumn="mobile" DataSetColumn="mobile" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MyB2CDbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MyB2CDbDataSet" msprop:Generator_UserDSName="MyB2CDbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Orders" msprop:Generator_TableClassName="View_OrdersDataTable" msprop:Generator_TableVarName="tableView_Orders" msprop:Generator_TablePropName="View_Orders" msprop:Generator_RowDeletingName="View_OrdersRowDeleting" msprop:Generator_UserTableName="View_Orders" msprop:Generator_RowChangingName="View_OrdersRowChanging" msprop:Generator_RowEvHandlerName="View_OrdersRowChangeEventHandler" msprop:Generator_RowDeletedName="View_OrdersRowDeleted" msprop:Generator_RowEvArgName="View_OrdersRowChangeEvent" msprop:Generator_RowChangedName="View_OrdersRowChanged" msprop:Generator_RowClassName="View_OrdersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" msprop:Generator_UserColumnName="OrderNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customerid" msprop:Generator_ColumnVarNameInTable="columnCustomerid" msprop:Generator_ColumnPropNameInRow="Customerid" msprop:Generator_ColumnPropNameInTable="CustomeridColumn" msprop:Generator_UserColumnName="Customerid" type="xs:int" minOccurs="0" />
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totalMoney" msprop:Generator_ColumnVarNameInTable="columntotalMoney" msprop:Generator_ColumnPropNameInRow="totalMoney" msprop:Generator_ColumnPropNameInTable="totalMoneyColumn" msprop:Generator_UserColumnName="totalMoney" type="xs:decimal" minOccurs="0" />
+              <xs:element name="salesincome" msprop:Generator_ColumnVarNameInTable="columnsalesincome" msprop:Generator_ColumnPropNameInRow="salesincome" msprop:Generator_ColumnPropNameInTable="salesincomeColumn" msprop:Generator_UserColumnName="salesincome" type="xs:decimal" minOccurs="0" />
+              <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tel" msprop:Generator_ColumnVarNameInTable="columntel" msprop:Generator_ColumnPropNameInRow="tel" msprop:Generator_ColumnPropNameInTable="telColumn" msprop:Generator_UserColumnName="tel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mobile" msprop:Generator_ColumnVarNameInTable="columnmobile" msprop:Generator_ColumnPropNameInRow="mobile" msprop:Generator_ColumnPropNameInTable="mobileColumn" msprop:Generator_UserColumnName="mobile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Orders" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

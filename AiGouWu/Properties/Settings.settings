@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AiGouWu.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AiGouWu_WebAutoSearch_AutoSearchKeyWords" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:55419/AutoSearchKeyWords.asmx</Value>
+    </Setting>
+    <Setting Name="AiGouWu_NewsAuto_NewsAutoSearch" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:55419/NewsAutoSearch.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
