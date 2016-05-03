@@ -13,6 +13,7 @@
     <RootNamespace>AiGouWu</RootNamespace>
     <AssemblyName>AiGouWu</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1319,7 +1320,9 @@
     <None Include="Web References\WebAutoSearch\AutoSearchKeyWords.disco" />
     <None Include="Web References\NewsAuto\NewsAutoSearch.disco" />
     <Content Include="ThankReg.htm" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web References\WebAutoSearch\AutoSearchKeyWords.wsdl" />
     <None Include="Web References\WebAutoSearch\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>

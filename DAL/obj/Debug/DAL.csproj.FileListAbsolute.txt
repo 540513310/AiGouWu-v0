@@ -333,3 +333,7 @@ L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78
 L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78集 项目后期功能完善1.4\AiGouWu\DAL\obj\Debug\ResolveAssemblyReference.cache
 L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78集 项目后期功能完善1.4\AiGouWu\DAL\obj\Debug\DAL.dll
 L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78集 项目后期功能完善1.4\AiGouWu\DAL\obj\Debug\DAL.pdb
+C:\Users\Joe Zhou\Desktop\AiGouWu\DAL\bin\Debug\DAL.dll
+C:\Users\Joe Zhou\Desktop\AiGouWu\DAL\bin\Debug\DAL.pdb
+C:\Users\Joe Zhou\Desktop\AiGouWu\DAL\obj\Debug\DAL.dll
+C:\Users\Joe Zhou\Desktop\AiGouWu\DAL\obj\Debug\DAL.pdb

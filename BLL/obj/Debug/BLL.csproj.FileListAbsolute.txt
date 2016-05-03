@@ -593,3 +593,12 @@ L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78
 L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78集 项目后期功能完善1.4\AiGouWu\BLL\obj\Debug\ResolveAssemblyReference.cache
 L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78集 项目后期功能完善1.4\AiGouWu\BLL\obj\Debug\BLL.dll
 L:\我的工作文件\国信科技文档\B2C电子商城系统全程开发\第78集 项目后期功能完善1.4\AiGouWu\BLL\obj\Debug\BLL.pdb
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\bin\Debug\BLL.dll
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\bin\Debug\BLL.pdb
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\bin\Debug\DAL.dll
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\bin\Debug\Model.dll
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\bin\Debug\DAL.pdb
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\bin\Debug\Model.pdb
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\obj\Debug\BLL.dll
+C:\Users\Joe Zhou\Desktop\AiGouWu\BLL\obj\Debug\BLL.pdb
