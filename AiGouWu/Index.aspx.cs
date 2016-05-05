@@ -16,7 +16,7 @@ namespace AiGouWu
             if (!IsPostBack)
             {
               
-                getteijiashangping("11");
+                getteijiashangping("8");
                 getzuixinpro();
                 lunxunguanggao();
                 xuanxiangkabind();

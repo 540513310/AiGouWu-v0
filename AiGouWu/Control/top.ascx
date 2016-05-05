@@ -64,7 +64,7 @@
     </div>
 </div>
 <!-- nav -->
-<div class="nav">
+<%--<div class="nav">
     <span class="icon"></span><span class="navl"></span><span class="navr"></span>
     <ul>
      
@@ -76,5 +76,5 @@
         <li><a href="#">爱购物社区</a></li>
          <li><a href="prolist.aspx?typeid=7">新品上市</a></li>
         </ul>
-</div>
+</div>--%>
 
