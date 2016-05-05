@@ -25,13 +25,13 @@
 	  <!--导航菜单,与下面的相关联,修改时注意参数-->
           <div id="tabs">
           <ul>
-			<%--<li onclick="tabs(1);"><a href="Article/List.aspx" target="sysMain"><span>资讯管理</span></a></li>--%>
+			<li onclick="tabs(1);"><%--<a href="Article/List.aspx" target="sysMain"><span>资讯管理</span></a>--%></li>
 			<li onclick="tabs(2);"><a href="Products/proList.aspx" target="sysMain"><span>商品信息管理</span></a></li>
 			<li onclick="tabs(3);"><a href="Customer/CustomerList.aspx" target="sysMain"><span>网站会员管理</span></a></li>
 			<li onclick="tabs(4);"><a href="Admin_center.aspx" target="sysMain"><span>供货商管理</span></a></li>			
-            <%--<li onclick="tabs(5);"><a href="Admin_center.aspx" target="sysMain"><span>论坛管理</span></a></li>--%>
+            <li onclick="tabs(5);"><%--<a href="Admin_center.aspx" target="sysMain"><span>论坛管理</span></a>--%></li>
             <li onclick="tabs(6);"><a href="Orders/OrdersList.aspx" target="sysMain"><span>订单管理</span></a></li>
-           <%-- <li onclick="tabs(7);"><a href="Orders/OrdersReport.aspx" target="sysMain"><span>销售统计管理</span></a></li>--%>
+            <li onclick="tabs(7);"><%--<a href="Orders/OrdersReport.aspx" target="sysMain"><span>销售统计管理</span></a>--%></li>
             <li onclick="tabs(8);"><a href="WebSet/WebSetDetail.aspx" target="sysMain"><span>系统管理</span></a></li>
           </ul>
           </div>
