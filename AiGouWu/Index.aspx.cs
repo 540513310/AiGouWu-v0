@@ -32,7 +32,7 @@ namespace AiGouWu
         /// <param name="typeid"></param>
         public void getteijiashangping(string typeid)
         { 
-        DataTable dt=    sqlcom.getDataByCondition("dbo.View_Product"," top 3 Product_id,product_name,smallimg "," type_id="+typeid+"  order by Product_id desc");
+        DataTable dt=    sqlcom.getDataByCondition("dbo.View_Product"," top 6 Product_id,product_name,smallimg "," type_id="+typeid+"  order by Product_id desc");
         this.re_teijia.DataSource = dt;
         this.re_teijia.DataBind();
         
