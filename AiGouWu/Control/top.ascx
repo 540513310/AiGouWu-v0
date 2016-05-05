@@ -60,7 +60,7 @@
         </cc1:AutoCompleteExtender>
     </div>
     <div class="tags">
-        <a href="prolist.aspx?cateid=52">IPad</a><a href="prolist.aspx?cateid=65">空调</a><a href="prolist.aspx?cateid=42">智能机</a>
+        <a href="prolist.aspx?cateid=52">平板</a><a href="prolist.aspx?cateid=65">手机</a><a href="prolist.aspx?cateid=42">智能设备</a>
     </div>
 </div>
 <!-- nav -->
