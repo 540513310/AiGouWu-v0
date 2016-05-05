@@ -108,8 +108,8 @@ namespace AiGouWu
         /// </summary>
         public void newslist()
         {
-          re_gonggao.DataSource=  sqlcom.getDataByCondition("tbNews", " top 3 NewsID,NewsTitle", " TypeID=14 order by NewsID desc");
-          this.re_gonggao.DataBind();
+          //re_gonggao.DataSource=  sqlcom.getDataByCondition("tbNews", " top 3 NewsID,NewsTitle", " TypeID=14 order by NewsID desc");
+          //this.re_gonggao.DataBind();
 
           //hangyenews.DataSource = sqlcom.getDataByCondition("tbNews", " top 8 NewsID,NewsTitle", " TypeID=1 order by NewsID desc");
           //hangyenews.DataBind();

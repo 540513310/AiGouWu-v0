@@ -38,13 +38,13 @@
     <div class="one">
         <div class="one-left">
             <div class="left">
-                <div class="xt">
-                </div>
-                <div class="xm">
-                </div>
-                <h3>
-                    <strong>商城公告</strong><a href="NewsList.aspx?typeid=14">更多</a></h3>
-                <ul class="notice xx">
+               <%-- <div class="xt">
+                </div>--%>
+                <%--<div class="xm">
+                </div>--%>
+                <%--<h3>
+                    <strong>商城公告</strong><a href="NewsList.aspx?typeid=14">更多</a></h3>--%>
+                <%--<ul class="notice xx">
                <asp:Repeater runat="server" ID="re_gonggao">
                <ItemTemplate>
                   <li><a title="<%#Eval("NewsTitle")%>" href="NewsDetail.aspx?id=<%#Eval("NewsID") %>"><%#Eval("NewsTitle")%></a></li>
@@ -53,11 +53,11 @@
                  
                    
                     
-                 </ul>
-                <div class="xm">
-                </div>
-                <div class="xb">
-                </div>
+                 </ul>--%>
+                <%--<div class="xm">
+                </div>--%>
+                <%--<div class="xb">
+                </div>--%>
                 <div class="h1">
                 </div>
                 <div class="xt">
@@ -296,12 +296,12 @@
                 </div>
                 <div class="prepaid">
                 <div>
-               <%-- <div class="title">
-                <strong>新闻中心</strong>
-                </div>--%>
+                <div class="title">
+               <%-- <strong>新闻中心</strong>--%>
                 </div>
-               <%-- <div class="Boxnews">
-                 <div class="newtitle" style=" position:relative;">
+                </div>
+             <div class="Boxnews">
+                 <%--<div class="newtitle" style=" position:relative;">
                     <strong >公司新闻</strong><span style=" position:absolute; right:10px;"><a href="NewsList.aspx">更多>></a></span> 
                     </div>
                     <div>
@@ -312,8 +312,8 @@
                          </ItemTemplate>
                         </asp:Repeater>        
                         </ul>
-                    </div>
-                </div>--%>
+                    </div>--%>
+                </div>
                    
 
                       <%-- <div class="Boxnews" >
