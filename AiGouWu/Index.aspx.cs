@@ -121,5 +121,10 @@ namespace AiGouWu
           //guoneiNews.DataBind();
 
         }
+
+        protected void datalist_catlist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
