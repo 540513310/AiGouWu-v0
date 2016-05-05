@@ -158,10 +158,10 @@ BODY {
 	TEXT-ALIGN: left; MARGIN: 10px auto; WIDTH: 950px; HEIGHT: 75px
 }
 .head H1 {
-	TEXT-INDENT: -9999px; PADDING-LEFT: 30px; WIDTH: 210px; FLOAT: left; MARGIN-RIGHT: 30px
+	TEXT-INDENT: -9999px; PADDING-LEFT: 0px; WIDTH: 210px; FLOAT: left; MARGIN-RIGHT: 30px
 }
 .head H1 a {
-	WIDTH: 204px; DISPLAY: block; BACKGROUND: url(../images/logo.png) no-repeat; HEIGHT: 75px
+	WIDTH: 232px; DISPLAY: block; BACKGROUND: url(../images/logo.png) no-repeat; HEIGHT: 75px
 }
 .search {
 	Z-INDEX: 1; BORDER-BOTTOM: #eeeded 1px solid; POSITION: relative; BORDER-LEFT: #eeeded 1px solid; PADDING-BOTTOM: 0px; MARGIN: 18px 0px 0px; PADDING-LEFT: 5px; WIDTH: 434px; PADDING-RIGHT: 5px; BACKGROUND: #f5f5f4; FLOAT: left; HEIGHT: 44px; BORDER-TOP: #eeeded 1px solid; BORDER-RIGHT: #eeeded 1px solid; PADDING-TOP: 0px
