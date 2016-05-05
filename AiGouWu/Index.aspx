@@ -296,11 +296,11 @@
                 </div>
                 <div class="prepaid">
                 <div>
-                <div class="title">
+               <%-- <div class="title">
                 <strong>新闻中心</strong>
+                </div>--%>
                 </div>
-                </div>
-                <div class="Boxnews">
+               <%-- <div class="Boxnews">
                  <div class="newtitle" style=" position:relative;">
                     <strong >公司新闻</strong><span style=" position:absolute; right:10px;"><a href="NewsList.aspx">更多>></a></span> 
                     </div>
@@ -313,10 +313,10 @@
                         </asp:Repeater>        
                         </ul>
                     </div>
-                </div>
+                </div>--%>
                    
 
-                       <div class="Boxnews" >
+                      <%-- <div class="Boxnews" >
                  <div class="newtitle"  style=" position:relative;">
                         <strong>行业新闻</strong><span style=" position:absolute; right:10px;"><a href="NewsList.aspx">更多>></a></span> 
                     </div>
@@ -330,11 +330,11 @@
                           
                         </ul>
                     </div>
-                </div>
+                </div>--%>
 
 
 
-                    <div class="Boxnews">
+                   <%-- <div class="Boxnews">
                  <div class="newtitle" style=" position:relative;">
                         <strong>国内新闻</strong><span style=" position:absolute; right:10px;"><a href="NewsList.aspx">更多>></a></span> 
                     </div>
@@ -347,7 +347,7 @@
                         </asp:Repeater>                       
                         </ul>
                     </div>
-                </div>
+                </div>--%>
                     <div style="background-color: #d3d2d2; height: 1px">
                     </div>
                 </div>

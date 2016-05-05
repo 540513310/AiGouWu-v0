@@ -111,14 +111,14 @@ namespace AiGouWu
           re_gonggao.DataSource=  sqlcom.getDataByCondition("tbNews", " top 3 NewsID,NewsTitle", " TypeID=14 order by NewsID desc");
           this.re_gonggao.DataBind();
 
-          hangyenews.DataSource = sqlcom.getDataByCondition("tbNews", " top 8 NewsID,NewsTitle", " TypeID=1 order by NewsID desc");
-          hangyenews.DataBind();
+          //hangyenews.DataSource = sqlcom.getDataByCondition("tbNews", " top 8 NewsID,NewsTitle", " TypeID=1 order by NewsID desc");
+          //hangyenews.DataBind();
 
-          this.gongsiNews.DataSource = sqlcom.getDataByCondition("tbNews", " top 8 NewsID,NewsTitle", " TypeID=2 order by NewsID desc");
-          gongsiNews.DataBind();
+          //this.gongsiNews.DataSource = sqlcom.getDataByCondition("tbNews", " top 8 NewsID,NewsTitle", " TypeID=2 order by NewsID desc");
+          //gongsiNews.DataBind();
 
-          this.guoneiNews.DataSource = sqlcom.getDataByCondition("tbNews", " top 8 NewsID,NewsTitle", " TypeID=13 order by NewsID desc");
-          guoneiNews.DataBind();
+          //this.guoneiNews.DataSource = sqlcom.getDataByCondition("tbNews", " top 8 NewsID,NewsTitle", " TypeID=13 order by NewsID desc");
+          //guoneiNews.DataBind();
 
         }
     }
