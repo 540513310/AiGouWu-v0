@@ -354,7 +354,7 @@
             </div>
         </div>
         <div class="right">
-            <div class="tips1">
+           <%-- <div class="tips1">
                 <a href="#">
                     <img src="images/novice.gif"></a><a href="#"><img src="images/open.gif"></a></div>
             <div class="tips2">
@@ -375,7 +375,7 @@
             <div class="tips4">
                 <a class="b1" title="交易安全" href="#">交易安全</a> <a class="b2" title="免费注册" href="#">免费注册</a>
                 <a class="b3" title="1分钱体验" href="#">1分钱体验</a>
-            </div>
+            </div>--%>
             <div class="prepaid">
                 <div class="title">
                     <strong>人气排行</strong>
