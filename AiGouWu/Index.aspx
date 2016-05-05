@@ -267,8 +267,11 @@
                     </div>
                     <div class="content" style=" min-height:220px;">
                        <div>               
-                        <asp:DataList runat="server" ID="datalist_catlist" RepeatColumns="3" 
-                               RepeatDirection="Horizontal" onitemdatabound="datalist_catlist_ItemDataBound">
+                        <asp:DataList runat="server" ID="datalist_catlist" RepeatColumns="2" 
+                               RepeatDirection="Horizontal" 
+                               onitemdatabound="datalist_catlist_ItemDataBound" 
+                               onselectedindexchanged="datalist_catlist_SelectedIndexChanged" 
+                               Width="734px">
                             <ItemStyle HorizontalAlign="Left" VerticalAlign="Top" />
                         <ItemTemplate>
                          <div class="cattitle"><%#Eval("catalogname")%></div>
