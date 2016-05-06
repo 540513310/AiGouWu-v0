@@ -189,15 +189,15 @@
   
                     <div>全国24小时发货，重量500g以下免运费（非货到付款）</div>
                      <div>品牌：  <%=dt.Rows[0]["PingPai"]%></div>
-                    <div>市场价格： ￥ <%=(double.Parse(dt.Rows[0]["retail_price"].ToString())*1.1).ToString("0.00")%> </div>
-                    <div>商城价格： ￥<%=decimal.Parse(dt.Rows[0]["retail_price"].ToString()).ToString("0.00")%> </div>
-                    <div>会员价格： ￥<%=(double.Parse(dt.Rows[0]["retail_price"].ToString()) * double.Parse(dt.Rows[0]["discount"].ToString())).ToString("0.00")%>【获得商城会员优惠价格】</div>
-                    <div>产品单位： <%=dt.Rows[0]["units"]%></div>
-                    <div>材    质： <%=dt.Rows[0]["material"]%></div>
-                    <div>规    格： <%=dt.Rows[0]["spec"]%>×10CM </div>
+                   <%-- <div>市场价格： ￥ <%=(double.Parse(dt.Rows[0]["retail_price"].ToString())*1.1).ToString("0.00")%> </div>
+                    <div>商城价格： ￥<%=decimal.Parse(dt.Rows[0]["retail_price"].ToString()).ToString("0.00")%> </div>--%>
+                    <div>价格： ￥<%=(double.Parse(dt.Rows[0]["retail_price"].ToString()) * double.Parse(dt.Rows[0]["discount"].ToString())).ToString("0.00")%>【获得商城会员优惠价格】</div>
+                   <%-- <div>产品单位： <%=dt.Rows[0]["units"]%></div>--%>
+                    <%--<div>材    质： <%=dt.Rows[0]["material"]%></div>
+                    <div>规    格： <%=dt.Rows[0]["spec"]%>×10CM </div>--%>
                     <div>起购数量：<input  runat="server" value="1" class="{required:true,digits:true,min:1}" style=" border:solid 1px #eee; width:20px;"  type="text" id="inputnum"/> 部 </div>
-                    <div>商品重量： <%=dt.Rows[0]["weight"]%></div>                   
-                    <div>有效期： <%=dt.Rows[0]["expiry_date"]%></div>
+                    <%--<div>商品重量： <%=dt.Rows[0]["weight"]%></div>    --%>               
+                    <%--<div>有效期： <%=dt.Rows[0]["expiry_date"]%></div>--%>
                     <div>所属类型：<%=dt.Rows[0]["catalogname"]%></div>
 
                     <div>
