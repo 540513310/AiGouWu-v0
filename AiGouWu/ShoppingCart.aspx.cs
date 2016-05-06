@@ -94,5 +94,10 @@ namespace AiGouWu
             sqlcom.UpdateTableByCondition("TbCat", " Num=" + num, " where CatID=" + cartid);
             cartlistband();
         }
+
+        protected void gvCart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

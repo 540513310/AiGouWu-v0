@@ -90,11 +90,14 @@
                                             <!--DWLayouttable-->
                                             <tbody>
                                                 <tr>
+                                                    <td width="30px" align ="center">
+                                                    选择
+                                                    </td>
                                                     <td height="29" width="250px" align="middle">
                                                         商品名
                                                     </td>
                                                     <td width="150px" align="center">
-                                                        会员价
+                                                        价格
                                                     </td>
                                                     <td width="180px" align="center">
                                                         数量
@@ -116,16 +119,24 @@
                                         <asp:GridView ID="gvCart" runat="server" DataKeyNames="CatID" AutoGenerateColumns="False"
                                             ShowFooter="True" Width="100%" ShowHeader="false" OnRowDataBound="gvCart_RowDataBound"
                                             OnRowDeleting="gvCart_RowDeleting" onrowcommand="gvCart_RowCommand" 
-                                            onrowupdating="gvCart_RowUpdating" onrowediting="gvCart_RowEditing">
+                                            onrowupdating="gvCart_RowUpdating" onrowediting="gvCart_RowEditing" 
+                                            onselectedindexchanged="gvCart_SelectedIndexChanged">
                                             <Columns>
+                                               <asp:TemplateField HeaderText="选择">
+                                                   <ItemTemplate>
+                                                       <asp:CheckBox id="cbxId" runat="Server"/>
+                                                        
+                                                   </ItemTemplate>
+                                                   <ItemStyle Width="30px" />
+                                                </asp:TemplateField>
                                                 <asp:BoundField DataField="proname" ReadOnly="true" HeaderText="名称">
-                                                    <ItemStyle Width="260px" />
+                                                    <ItemStyle Width="220px" />
                                                 </asp:BoundField>
                                                 <asp:BoundField DataField="ProPrice"  ReadOnly="true"  HeaderText="价钱">
-                                                    <ItemStyle Width="180px" />
+                                                    <ItemStyle Width="140px" />
                                                 </asp:BoundField>
                                                 <asp:TemplateField HeaderText="数量">
-                                                    <ItemStyle Width="150px" />
+                                                    <ItemStyle Width="100px" />
                                                     <ItemTemplate>
                                                         <asp:ImageButton ID="btnjian" ImageUrl="images/cut.gif"   CommandName="Edit" runat="server" />
                                                       
