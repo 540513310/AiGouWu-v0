@@ -145,8 +145,13 @@
 
 </div>
 <br />
-<br />
-<br />
+
+<div>
+    <a target="_blank" href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=540513310&fuin=2938828349&website=www.oicqzone.com">
+        <img border="0" src="/images/qq客服.jpg" alt="点击这里给我发消息" title="点击这里给我发消息"/>
+    </a>
+</div>
+
 </div>
     <div id="p-rigth">
         <div class="detail_r1_title">
