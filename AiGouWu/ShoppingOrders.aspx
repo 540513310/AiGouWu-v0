@@ -130,19 +130,19 @@
                                                     <td height="29" width="250px" align="middle">
                                                         商品名
                                                     </td>
-                                                    <td width="150px" align="center">
+                                                    <td width="170px" align="center">
                                                         会员价
                                                     </td>
-                                                    <td width="180px" align="center">
+                                                    <td width="150px" align="center">
                                                         数量
                                                     </td>
-                                                    <td width="120px" align="center">
+                                                    <td width="140px" align="center">
                                                         折扣率
                                                     </td>
-                                                    <td align="center">
+                                                   <%-- <td align="center">
                                                         <!--DWLayoutEmptyCell-->
                                                         &nbsp;
-                                                    </td>
+                                                    </td>--%>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -171,9 +171,9 @@
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                                 <asp:BoundField DataField="DisCount" ItemStyle-Width="150px" ReadOnly="true" HeaderText="折扣" />
-                                                <asp:CommandField HeaderText="删除" ItemStyle-Width="100px" DeleteText="删除" ShowDeleteButton="true">
+                                                <%--<asp:CommandField HeaderText="删除" ItemStyle-Width="100px" DeleteText="删除" ShowDeleteButton="true">
                                                     <ItemStyle />
-                                                </asp:CommandField>
+                                                </asp:CommandField>--%>
                                             </Columns>
                                             <EmptyDataTemplate>
                                                 您的购物车中没有任何商品。

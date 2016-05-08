@@ -77,7 +77,7 @@ namespace AiGouWu
 
         private void cartlistband()
         {
-            System.Data.DataTable dt = sqlcom.getDataByCondition("dbo.TbCat", "*,dbo.getProNameByProId(ProID)as proname", "  isOrders=0 and Customerid=" + Session["Cid"].ToString());
+            System.Data.DataTable dt = sqlcom.getDataByCondition("dbo.TbCat", "*,dbo.getProNameByProId(ProID)as proname", "  isOrders=0 and isGoingBuy=1 and Customerid=" + Session["Cid"].ToString());
             this.gvCart.DataSource = dt;
 
             this.gvCart.DataBind();
@@ -115,7 +115,7 @@ namespace AiGouWu
             };
          int ordersid=   orderbll.tbOrders_ADD(orders);
          int count= orderbll.setorderprosbycid(int.Parse(Session["Cid"].ToString()), ordersid);
-         int cartcount=   sqlcom.UpdateTableByCondition("dbo.TbCat", " isOrders=1 ", " where isOrders=0 and  Customerid=" + Session["Cid"].ToString());
+         int cartcount = sqlcom.UpdateTableByCondition("dbo.TbCat", " isOrders=1 ", " where isOrders=0 and isGoingBuy=1 and  Customerid=" + Session["Cid"].ToString());
          int ccount= sqlcom.UpdateTableByCondition("dbo.tbCustomer", "c_name='" + txtRealName.Text.Trim() + "',tel='" + orders.Tel + "',mobile='" + orders.Mobile + "',email='" + txtEmail.Text + "',link_men='" + txtOthors.Text + "',address='" + txtAddress.Text + "'", " where id=" + Session["Cid"].ToString());
         
          if (ordersid == 0 || count == 0 || cartcount == 0 || ccount == 0)
@@ -128,8 +128,23 @@ namespace AiGouWu
              Response.Redirect("PayWay.aspx?OrderID=" + ordersid);
          }
 
-
+         //System.Data.DataTable dt = sqlcom.getDataByCondition("dbo.TbCat", "*,dbo.getProNameByProId(ProID)as proname", "  isOrders=0 and isGoingBuy=1 and Customerid=" + Session["Cid"].ToString());
+         //int jubuI = 0;
+         //while  (jubuI < gvCart.Rows.Count)
+         //{
+         //    string cartid = dt.Rows[jubuI]["CatID"].ToString();
+         //    sqlcom.UpdateTableByCondition("TbCat", " isGoingBuy=" + 0, " where CatID=" + cartid);
+         //    jubuI++;
+         //}
             
+         //   for (int i = 0; i < gvCart.Rows.Count; i++)
+         //{
+            
+         //        string cartid = dt.Rows[i]["CatID"].ToString();
+         //        sqlcom.UpdateTableByCondition("TbCat", " isGoingBuy=" + 0, " where CatID=" + cartid);
+                 
+         //}
+         
         }
 
       

@@ -36,6 +36,10 @@
                 obj.value = v;
             }
         }
+        function imgOrder_onclick() {
+
+        }
+
     </script>
 </head>
 <body>
@@ -194,9 +198,11 @@
                                     </td>
                                     <td valign="top" width="114" align="right">
                                         <a href="ShoppingOrders.aspx">
-                                          <img src="images/order.gif"  runat="server" id="imgOrder" Width="103"
-                                                Height="34"/>
-         
+                                       
+                                          <%--<img src="images/order.gif"  runat="server" id="imgOrder" Width="103"
+                                                Height="34" onclick="return imgOrder_onclick()" />--%>
+                                            <asp:ImageButton  runat="server" src="images/order.gif" ID="imgOrder" Width="103"
+                                             Height="34" onclick="imgOrder_Click"  />
                                         </a>
                                     </td>
                                 </tr>

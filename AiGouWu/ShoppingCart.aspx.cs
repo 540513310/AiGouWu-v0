@@ -34,7 +34,7 @@ namespace AiGouWu
             this.gvCart.DataSource = dt;
             this.gvCart.DataBind();
             double total = 0.00;
-            double thistotal = 0;
+            //double thistotal = 0;
             if (dt != null && dt.Rows.Count > 0)
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
@@ -142,10 +142,30 @@ namespace AiGouWu
                     double thePrice = double.Parse(thisPrice);
                     thistotal = thePrice * Num * discount;
                     total += thistotal;
+                    //string cartid = this.gvCart.Rows[i]..Value.ToString();
+                   // string cartid = this.gvCart.DataKeys[e.NewEditIndex].Value.ToString();
                 }
                 
             }
             lbtotal.Text = total.ToString("0.00");
+        }
+
+        protected void imgOrder_Click(object sender, ImageClickEventArgs e)
+        {
+            System.Data.DataTable dt = sqlcom.getDataByCondition("dbo.TbCat", "*,dbo.getProNameByProId(ProID)as proname", " isOrders=0 and  Customerid=" + Session["Cid"].ToString());
+
+            for (int i = 0; i < gvCart.Rows.Count; i++)
+            {
+                CheckBox check = gvCart.Rows[i].FindControl("cbxId") as CheckBox;
+                if (check.Checked == true)
+                {
+                    string cartid =dt.Rows[i]["CatID"].ToString ();
+                    sqlcom.UpdateTableByCondition("TbCat", " isGoingBuy=" + 1, " where CatID=" + cartid);
+                }
+
+            }
+            Response.Redirect("ShoppingOrders.aspx");
+
         }
     }
 }
