@@ -770,6 +770,7 @@
     <Content Include="ProImg\yj60.jpg" />
     <Content Include="prolist.aspx" />
     <Content Include="JiHuoEmail.aspx" />
+    <Content Include="Scripts\function-check.js" />
     <Content Include="Scripts\jquery.metadata.js" />
     <Content Include="Scripts\jquery.ui.dialog.js" />
     <Content Include="Scripts\jquery.validate.js" />

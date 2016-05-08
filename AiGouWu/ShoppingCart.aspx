@@ -12,6 +12,8 @@
     <script language="javascript" type="text/javascript" src="Scripts/jquery-1.4.1.js"></script>
     <script language="javascript" type="text/javascript" src="Scripts/topCommon.js"></script>
     <script language="javascript" type="text/javascript" src="Scripts/init.js"></script>
+    <script src="Scripts/function-check.js" type="text/javascript"></script>
+    
     <script type="text/javascript">
         //点击+号图，数量+1
         function Plus(obj) {
@@ -90,8 +92,8 @@
                                             <!--DWLayouttable-->
                                             <tbody>
                                                 <tr>
-                                                    <td width="30px" align ="center">
-                                                    选择
+                                                    <td width="40px" align ="center">
+                                                    <%--<input type ="checkbox" onclick ="check_all(this);" id="selected-all"  />全--%>选择
                                                     </td>
                                                     <td height="29" width="250px" align="middle">
                                                         商品名
@@ -120,12 +122,12 @@
                                             ShowFooter="True" Width="100%" ShowHeader="false" OnRowDataBound="gvCart_RowDataBound"
                                             OnRowDeleting="gvCart_RowDeleting" onrowcommand="gvCart_RowCommand" 
                                             onrowupdating="gvCart_RowUpdating" onrowediting="gvCart_RowEditing" 
-                                            onselectedindexchanged="gvCart_SelectedIndexChanged">
+                                            onselectedindexchanged="gvCart_SelectedIndexChanged" >
                                             <Columns>
+                                                
                                                <asp:TemplateField HeaderText="选择">
                                                    <ItemTemplate>
-                                                       <asp:CheckBox id="cbxId" runat="Server"/>
-                                                        
+                                                       <asp:CheckBox id="cbxId" runat="Server" CssClass="checkall" CommandName="Edit"  oncheckedchanged="CheckBox2_CheckedChanged" AutoPostBack="true" />
                                                    </ItemTemplate>
                                                    <ItemStyle Width="30px" />
                                                 </asp:TemplateField>
