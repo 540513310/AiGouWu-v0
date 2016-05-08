@@ -217,7 +217,7 @@
                                                 <td class="style2">
                                                     会员名:</td>
                                                 <td class="style3">
-                                                    <asp:Label ID="lbCustomer" runat="server" Text="大马哈"></asp:Label>
+                                                    <asp:Label ID="lbCustomer" runat="server" Text="阳光霓霞"></asp:Label>
                                                 </td>
                                                 <td class="style2">
                                                     真实姓名:</td>

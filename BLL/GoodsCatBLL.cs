@@ -16,20 +16,22 @@ namespace BLL
         /// </summary>
         public int Add(TbCat model)
         {
-          
+
             SqlParameter[] parameters = {
 					new SqlParameter("@CatID", SqlDbType.Int,4),
 					new SqlParameter("@Customerid", SqlDbType.Int,4),
 					new SqlParameter("@ProID", SqlDbType.Int,4),
 					new SqlParameter("@Num", SqlDbType.Int,4),
 					new SqlParameter("@DisCount", SqlDbType.Money,8),
-					new SqlParameter("@ProPrice", SqlDbType.Money,8)};
+					new SqlParameter("@ProPrice", SqlDbType.Money,8),
+                    new SqlParameter ("@IsOrders",SqlDbType.Bit,4 )};
             parameters[0].Direction = ParameterDirection.Output;
             parameters[1].Value = model.Customerid;
             parameters[2].Value = model.ProID;
             parameters[3].Value = model.Num;
             parameters[4].Value = model.DisCount;
             parameters[5].Value = model.ProPrice;
+            parameters[6].Value = model.IsOrders;
 
             dbhelper.ExcuteCommandReturnInt("TbCat_ADD", CommandType.StoredProcedure, parameters);
 

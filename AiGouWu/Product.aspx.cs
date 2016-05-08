@@ -108,7 +108,8 @@ namespace AiGouWu
                 DisCount = decimal.Parse(dt.Rows[0]["discount"].ToString()),
                 Num = int.Parse(this.inputnum.Value.ToString()),
                 ProID = int.Parse(Request.QueryString["proid"].ToString()),
-                ProPrice = decimal.Parse(dt.Rows[0]["retail_price"].ToString())
+                ProPrice = decimal.Parse(dt.Rows[0]["retail_price"].ToString()),
+                IsOrders=false 
 
             };
             GoodsCatBLL gbll = new GoodsCatBLL();

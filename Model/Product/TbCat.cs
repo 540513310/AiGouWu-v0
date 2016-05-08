@@ -20,6 +20,13 @@ namespace Model.Product
         private int? _num;
         private decimal? _discount = 1M;
         private decimal? _proprice = 0M;
+        private bool? _isOrders = false;
+
+        public bool? IsOrders
+        {
+            get { return _isOrders; }
+            set { _isOrders = value; }
+        }
         /// <summary>
         /// 
         /// </summary>
