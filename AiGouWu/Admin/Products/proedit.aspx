@@ -68,7 +68,7 @@
           <asp:TextBox ID="units" CssClass="input" runat="server"></asp:TextBox>
          </td>
       <td class="style2">
-          批发价</td>
+          价格</td>
       <td>
           <asp:TextBox ID="Wholesale_price" CssClass="input" Text="0" runat="server"></asp:TextBox>
         &nbsp;不填默认是成本的110%</td>
@@ -80,7 +80,7 @@
           <asp:TextBox ID="Weight" CssClass="input" Text="0" runat="server"></asp:TextBox>
      
         </td>
-      <td>零售价</td>
+      <td>优惠价</td>
       <td>
           <asp:TextBox ID="Retail_Price" CssClass="input" Text="0" runat="server"></asp:TextBox>
           不填默认是成本的120%<br />

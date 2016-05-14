@@ -14,7 +14,6 @@ namespace AiGouWu
     public partial class Product : System.Web.UI.Page
     {
         SqlComm sqlcom = new SqlComm();
-
         public  static  DataTable dt;
         public static  DataTable imgsdt;
         protected void Page_Load(object sender, EventArgs e)

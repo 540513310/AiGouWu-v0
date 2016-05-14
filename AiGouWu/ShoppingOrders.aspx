@@ -229,7 +229,8 @@
                                                 <td>
                                                     其他联系人</td>
                                                 <td>
-                                                    <asp:TextBox ID="txtOthors" CssClass="input" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="txtOthors" CssClass="input" runat="server" 
+                                                        ontextchanged="txtOthors_TextChanged"></asp:TextBox>
                                                 </td>
                                                 <td class="style4">
                                                     送货地址:</td>
