@@ -43,12 +43,30 @@ namespace AiGouWu.Admin.Orders
                      string id = Request.QueryString["id"].ToString();
                      int int_id = int.Parse(id);
                      tborder = orderbll.getOrdersViewModel(int_id);
-                     if (tborder.Logid != null)
+                     //if (tborder.Logid != null)
+                     //{
+                     //    string str_logid = tborder.Logid.ToString();
+                     //    int int_logid = int.Parse(str_logid);
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + str_logid);
+                     //    this.ddlClassId.DataTextField = "LogisticsName";
+                     //    this.ddlClassId.DataValueField = "ID";
+                     //    this.ddlClassId.DataBind();
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.txtAddress.Text = logs.Address;
+                     //    this.txtLinkMan.Text = logs.LinkMan;
+
+                     //    this.txtMobie.Text = logs.Mobile;
+                     //    this.txtTel.Text = logs.Tel;
+
+
+                     //}
+                     if (tborder.Logid ==1)
                      {
                          string str_logid = tborder.Logid.ToString();
                          int int_logid = int.Parse(str_logid);
                          logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + str_logid);
+                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "1");
                          this.ddlClassId.DataTextField = "LogisticsName";
                          this.ddlClassId.DataValueField = "ID";
                          this.ddlClassId.DataBind();
@@ -61,6 +79,62 @@ namespace AiGouWu.Admin.Orders
 
 
                      }
+                     else if (tborder.Logid == 2)
+                     {
+                         string str_logid = tborder.Logid.ToString();
+                         int int_logid = int.Parse(str_logid);
+                         logs = logsbll.tbLogs_GetModel(str_logid);
+                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "2");
+                         this.ddlClassId.DataTextField = "LogisticsName";
+                         this.ddlClassId.DataValueField = "ID";
+                         this.ddlClassId.DataBind();
+                         logs = logsbll.tbLogs_GetModel(str_logid);
+                         this.txtAddress.Text = logs.Address;
+                         this.txtLinkMan.Text = logs.LinkMan;
+
+                         this.txtMobie.Text = logs.Mobile;
+                         this.txtTel.Text = logs.Tel;
+                     }
+                     else if (tborder.Logid == 3)
+                     {
+                         string str_logid = tborder.Logid.ToString();
+                         int int_logid = int.Parse(str_logid);
+                         logs = logsbll.tbLogs_GetModel(str_logid);
+                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "3");
+                         this.ddlClassId.DataTextField = "LogisticsName";
+                         this.ddlClassId.DataValueField = "ID";
+                         this.ddlClassId.DataBind();
+                         logs = logsbll.tbLogs_GetModel(str_logid);
+                         this.txtAddress.Text = logs.Address;
+                         this.txtLinkMan.Text = logs.LinkMan;
+
+                         this.txtMobie.Text = logs.Mobile;
+                         this.txtTel.Text = logs.Tel;
+                     }
+                     else if (tborder.Logid == 4)
+                     {
+                         string str_logid = tborder.Logid.ToString();
+                         int int_logid = int.Parse(str_logid);
+                         logs = logsbll.tbLogs_GetModel(str_logid);
+                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "4");
+                         this.ddlClassId.DataTextField = "LogisticsName";
+                         this.ddlClassId.DataValueField = "ID";
+                         this.ddlClassId.DataBind();
+                         logs = logsbll.tbLogs_GetModel(str_logid);
+                         this.txtAddress.Text = logs.Address;
+                         this.txtLinkMan.Text = logs.LinkMan;
+
+                         this.txtMobie.Text = logs.Mobile;
+                         this.txtTel.Text = logs.Tel;
+                     }
+                     else
+                     {
+                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", null);
+                         this.ddlClassId.DataTextField = "LogisticsName";
+                         this.ddlClassId.DataValueField = "ID";
+                         this.ddlClassId.DataBind();
+                     }
+
                 }
                 else
                 {

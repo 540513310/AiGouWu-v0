@@ -87,7 +87,8 @@
         </tr>
         <tr>
             <td align="right">所属类型：</td>
-            <td><asp:DropDownList id="ddlClassId" CssClass=" required" runat="server"></asp:DropDownList></td>
+            <td><asp:DropDownList id="ddlClassId" CssClass=" required" runat="server" 
+                    onselectedindexchanged="ddlClassId_SelectedIndexChanged"></asp:DropDownList></td>
         </tr>
         <tr>
             <td align="right">文章图片：</td>

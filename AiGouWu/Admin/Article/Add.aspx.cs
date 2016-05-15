@@ -56,5 +56,10 @@ namespace AiGouWu.Admin.Article
           }
 
         }
+
+        protected void ddlClassId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
