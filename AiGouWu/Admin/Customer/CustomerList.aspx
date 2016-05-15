@@ -56,7 +56,7 @@
         <th width="6%">选择</th>
         <th width="6%">编号</th>
         <th width="13%" align="left">会员名称</th>
-        <%--<th width="13%">会员类型</th>--%>
+        <th width="13%">会员类型</th>
         <th width="13%">电话号码</th>
         <th width="13%">手机号码</th>
         <th width="13%">地址</th>
@@ -69,7 +69,7 @@
         <td align="center"><asp:CheckBox ID="cb_id" CssClass="checkall"  runat="server" /></td>
                 <td align="center"><asp:Label ID="lbID" runat="server" Text='<%#Eval("id") %>'></asp:Label></td>
                 <td ><%#Eval("username")%></td>
-                <%--<td align="center"><%#Eval("TypeName")%></td>--%>
+                <td align="center"><%#Eval("TypeName")%></td>
                 <td align="center"><%#Eval("tel")%></td> 
                 <td align="center"><%#Eval("mobile")%></td>   
                 <td align="center"><%#Eval("address")%></td>   

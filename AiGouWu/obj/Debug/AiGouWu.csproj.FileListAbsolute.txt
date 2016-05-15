@@ -827,3 +827,16 @@ C:\Users\Joe Zhou\Desktop\AiGouWu\AiGouWu\obj\Debug\RdlCompile.cache
 C:\Users\Joe Zhou\Desktop\AiGouWu\AiGouWu\obj\Debug\RdlCompile.compiled
 C:\Users\Joe Zhou\Desktop\AiGouWu\AiGouWu\obj\Debug\AiGouWu.dll
 C:\Users\Joe Zhou\Desktop\AiGouWu\AiGouWu\obj\Debug\AiGouWu.pdb
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\AiGouWu.dll
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\AiGouWu.pdb
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\BLL.dll
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\Model.dll
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\DAL.dll
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\BLL.pdb
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\Model.pdb
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\bin\DAL.pdb
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\obj\Debug\AiGouWu.csprojResolveAssemblyReference.cache
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\obj\Debug\RdlCompile.cache
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\obj\Debug\RdlCompile.compiled
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\obj\Debug\AiGouWu.dll
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\AiGouWu\obj\Debug\AiGouWu.pdb

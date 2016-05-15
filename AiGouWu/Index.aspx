@@ -162,11 +162,11 @@
                     <div class="text">
                         <ul>
                             <li><a href="#">手机</a></li>
-                            <li><a href="#">数码相机</a></li>
-                            <li><a href="#">电脑</a></li>
-                            <li><a href="#">智能设备</a></li>
-                            <%--<li><a href="#">办公用品</a></li>
-                            <li><a href="Product.aspx">软件</a></li>--%>
+                            <li><a href="#">数码</a></li>
+                            <li><a href="#">家电</a></li>
+                            <li><a href="#">电脑硬件</a></li>
+                            <li><a href="#">办公用品</a></li>
+                            <li><a href="Product.aspx">软件</a></li>
                             <li><a href="Product.aspx">推荐</a></li>
                        </ul>
                     </div>
@@ -200,7 +200,7 @@
 
                            <ul>
                             <%
-                                System.Data.DataRow[] jiadian_dr = tb_dt.Select("type_id=5");
+                                System.Data.DataRow[] jiadian_dr = tb_dt.Select("type_id=11");
                                 for (int i = 0; i < jiadian_dr.Length; i++)
                                 { 
                             %>
@@ -212,7 +212,7 @@
 
                           <ul>
                             <%
-                                System.Data.DataRow[] yinjian_dr = tb_dt.Select("type_id=6");
+                                System.Data.DataRow[] yinjian_dr = tb_dt.Select("type_id=4");
                                 for (int i = 0; i < yinjian_dr.Length; i++)
                                 { 
                             %>

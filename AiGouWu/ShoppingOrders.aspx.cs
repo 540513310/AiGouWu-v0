@@ -147,11 +147,6 @@ namespace AiGouWu
          
         }
 
-        protected void txtOthors_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
       
        
     }

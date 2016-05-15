@@ -39,7 +39,7 @@ namespace AiGouWu.Admin.Products
 
 
         /// <summary>
-        /// 产品列表绑定
+        /// 新闻列表绑定
         /// </summary>
         private void getprosList()
         {
