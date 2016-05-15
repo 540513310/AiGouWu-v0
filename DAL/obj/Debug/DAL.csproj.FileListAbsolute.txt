@@ -341,3 +341,4 @@ C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\DAL\bin\Debug\DA
 C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\DAL\bin\Debug\DAL.pdb
 C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\DAL\obj\Debug\DAL.dll
 C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\DAL\obj\Debug\DAL.pdb
+C:\Users\Joe Zhou\Desktop\AiGouWu\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

@@ -34,6 +34,8 @@
         {
             width: 127px;
         }
+        .required
+        {}
         </style>
 </head>
 <body style="padding:10px;">
@@ -49,14 +51,11 @@
     <tr>
       <td>
           物流公司名称</td>
-      <td>   
-       <asp:DropDownList id="ddlClassId"   CssClass=" required" runat="server" 
+      <td> 
+            <asp:DropDownList id="ddlClassId" CssClass=" select"  runat="server" 
                 AutoPostBack="True" Height="23px" 
-                onselectedindexchanged="ddlClassId_SelectedIndexChanged" Width="145px" 
-              AppendDataBoundItems="True">
-          </asp:DropDownList>    
-          <%--<asp:TextBox ID="txtLogsName" CssClass="input required" HintTitle="物流公司名称" HintInfo="物流公司名称必须写，建议不超过30个字。"   runat="server"></asp:TextBox>
-       --%> </td>
+                onselectedindexchanged="ddlClassId_SelectedIndexChanged" Width="145px"></asp:DropDownList>
+          <%--<asp:TextBox ID="txtLogsName" CssClass="input required" HintTitle="物流公司名称" HintInfo="物流公司名称必须写，建议不超过30个字。"   runat="server"></asp:TextBox>--%></td>
     </tr>
     <tr>
       <td class="style4">

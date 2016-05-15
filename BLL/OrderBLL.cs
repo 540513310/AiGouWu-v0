@@ -213,6 +213,24 @@ namespace BLL
         }
       }
 
+      //订单审核时，根据订单id，为该订单选择物流公司
+      public int tb_order_updata(int log_id,int  order_id)
+      {
+          SqlParameter[] parameters = {
+					new SqlParameter("@Logid", SqlDbType.Int,4),
+					new SqlParameter("@OrderID", SqlDbType.Int,4),
+					};
+          parameters[0].Value = log_id;
+          parameters[1].Value = order_id;
+          return dbhelper.ExcuteCommandReturnInt("tb_order_wuliu_updata", CommandType.StoredProcedure, parameters);
+
+ 
+      }
+
+
+
+
+
 
       /// <summary>
       /// 把此客户在购物车中产品提交到订单产品表
