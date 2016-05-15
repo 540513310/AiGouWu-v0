@@ -50,7 +50,7 @@
       <td>
           物流公司名称</td>
       <td>   
-       <asp:DropDownList id="ddlClassId" CssClass=" select"  runat="server" 
+       <asp:DropDownList id="ddlClassId"   CssClass=" required" runat="server" 
                 AutoPostBack="True" Height="23px" 
                 onselectedindexchanged="ddlClassId_SelectedIndexChanged" Width="145px"></asp:DropDownList>    
           <%--<asp:TextBox ID="txtLogsName" CssClass="input required" HintTitle="物流公司名称" HintInfo="物流公司名称必须写，建议不超过30个字。"   runat="server"></asp:TextBox>

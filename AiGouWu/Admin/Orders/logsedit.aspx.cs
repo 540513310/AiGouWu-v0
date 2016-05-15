@@ -61,6 +61,7 @@ namespace AiGouWu.Admin.Orders
 
 
                      //}
+                     #region
                      if (tborder.Logid ==1)
                      {
                          string str_logid = tborder.Logid.ToString();
@@ -127,6 +128,7 @@ namespace AiGouWu.Admin.Orders
                          this.txtMobie.Text = logs.Mobile;
                          this.txtTel.Text = logs.Tel;
                      }
+                     #endregion
                      else
                      {
                          this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", null);
