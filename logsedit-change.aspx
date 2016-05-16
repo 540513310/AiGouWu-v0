@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logsedit.aspx.cs" ValidateRequest="false" Inherits="AiGouWu.Admin.Orders.logsedit" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logsedit-change.aspx.cs" ValidateRequest="false" Inherits="AiGouWu.Admin.Orders.logsedit-change" %>
 
 <%@ Register assembly="FredCK.FCKeditorV2" namespace="FredCK.FCKeditorV2" tagprefix="FCKeditorV2" %>
 
@@ -42,7 +42,7 @@
     <form id="form1" runat="server">
           <input id="Type_ID"  runat="server" type="hidden" /> 
     <div class="navigation">
-      <span class="back"><a href="LogsList.aspx">返回列表</a></span><b>您当前的位置：首页 &gt;订单管理 &gt; 物流公司信息编辑</b>
+      <span class="back"><a href="LogsList.aspx">返回列表</a></span><b>您当前的位置：首页 &gt;订单管理 &gt; 物流公司信息修改</b>
     </div>
     <div style="padding-bottom:10px;"></div>
 

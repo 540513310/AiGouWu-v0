@@ -191,6 +191,7 @@
     <Content Include="Admin\Manage\List.aspx" />
     <Content Include="Admin\Msg.aspx" />
     <Content Include="Admin\Orders\CustomerReport.aspx" />
+    <Content Include="Admin\Orders\logseditchange.aspx" />
     <Content Include="Admin\Orders\OdersDetail.aspx" />
     <Content Include="Admin\Orders\orderdetail.html" />
     <Content Include="Admin\Orders\OrdersShenHe.aspx" />
@@ -928,6 +929,13 @@
     </Compile>
     <Compile Include="Admin\Orders\CustomerReport.aspx.designer.cs">
       <DependentUpon>CustomerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Orders\logseditchange.aspx.cs">
+      <DependentUpon>logseditchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Orders\logseditchange.aspx.designer.cs">
+      <DependentUpon>logseditchange.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Orders\OdersDetail.aspx.cs">
       <DependentUpon>OdersDetail.aspx</DependentUpon>

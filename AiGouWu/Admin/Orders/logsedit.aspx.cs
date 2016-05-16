@@ -45,12 +45,40 @@ namespace AiGouWu.Admin.Orders
                      string id = Request.QueryString["id"].ToString();
                      int int_id = int.Parse(id);
                      tborder = orderbll.getOrdersViewModel(int_id);
-                     //if (tborder.Logid != null)
+                     string string_logid = tborder.Logid.ToString();
+                     if (string_logid != "")
+                     {
+                         //int int_logid = int.Parse(string_logid);
+                         logs = logsbll.tbLogs_GetModel(string_logid);
+                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + string_logid);
+                         this.ddlClassId.DataTextField = "LogisticsName";
+                         this.ddlClassId.DataValueField = "ID";
+                         this.ddlClassId.DataBind();
+                         logs = logsbll.tbLogs_GetModel(string_logid);
+                         this.txtAddress.Text = logs.Address;
+                         this.txtLinkMan.Text = logs.LinkMan;
+                         this.txtMobie.Text = logs.Mobile;
+                         this.txtTel.Text = logs.Tel;
+                     }
+                     else
+                     {
+                         this.ddlClassId.Items.Insert(0, new ListItem("请选择", "0"));
+                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", null);
+                         this.ddlClassId.DataTextField = "LogisticsName";
+                         this.ddlClassId.DataValueField = "ID";
+                         this.ddlClassId.DataBind();
+                         this.ddlClassId.AppendDataBoundItems = true;
+                         this.ddlClassId.DataBind();
+
+                     }
+
+                     //#region
+                     //if (tborder.Logid ==1)
                      //{
                      //    string str_logid = tborder.Logid.ToString();
                      //    int int_logid = int.Parse(str_logid);
                      //    logs = logsbll.tbLogs_GetModel(str_logid);
-                     //    this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + str_logid);
+                     //    this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "1");
                      //    this.ddlClassId.DataTextField = "LogisticsName";
                      //    this.ddlClassId.DataValueField = "ID";
                      //    this.ddlClassId.DataBind();
@@ -63,90 +91,72 @@ namespace AiGouWu.Admin.Orders
 
 
                      //}
-                     #region
-                     if (tborder.Logid ==1)
-                     {
-                         string str_logid = tborder.Logid.ToString();
-                         int int_logid = int.Parse(str_logid);
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "1");
-                         this.ddlClassId.DataTextField = "LogisticsName";
-                         this.ddlClassId.DataValueField = "ID";
-                         this.ddlClassId.DataBind();
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.txtAddress.Text = logs.Address;
-                         this.txtLinkMan.Text = logs.LinkMan;
+                     //else if (tborder.Logid == 2)
+                     //{
+                     //    string str_logid = tborder.Logid.ToString();
+                     //    int int_logid = int.Parse(str_logid);
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "2");
+                     //    this.ddlClassId.DataTextField = "LogisticsName";
+                     //    this.ddlClassId.DataValueField = "ID";
+                     //    this.ddlClassId.DataBind();
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.txtAddress.Text = logs.Address;
+                     //    this.txtLinkMan.Text = logs.LinkMan;
 
-                         this.txtMobie.Text = logs.Mobile;
-                         this.txtTel.Text = logs.Tel;
+                     //    this.txtMobie.Text = logs.Mobile;
+                     //    this.txtTel.Text = logs.Tel;
+                     //}
+                     //else if (tborder.Logid == 3)
+                     //{
+                     //    string str_logid = tborder.Logid.ToString();
+                     //    int int_logid = int.Parse(str_logid);
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "3");
+                     //    this.ddlClassId.DataTextField = "LogisticsName";
+                     //    this.ddlClassId.DataValueField = "ID";
+                     //    this.ddlClassId.DataBind();
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.txtAddress.Text = logs.Address;
+                     //    this.txtLinkMan.Text = logs.LinkMan;
 
+                     //    this.txtMobie.Text = logs.Mobile;
+                     //    this.txtTel.Text = logs.Tel;
+                     //}
+                     //else if (tborder.Logid == 4)
+                     //{
+                     //    string str_logid = tborder.Logid.ToString();
+                     //    int int_logid = int.Parse(str_logid);
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "4");
+                     //    this.ddlClassId.DataTextField = "LogisticsName";
+                     //    this.ddlClassId.DataValueField = "ID";
+                     //    this.ddlClassId.DataBind();
+                     //    logs = logsbll.tbLogs_GetModel(str_logid);
+                     //    this.txtAddress.Text = logs.Address;
+                     //    this.txtLinkMan.Text = logs.LinkMan;
 
-                     }
-                     else if (tborder.Logid == 2)
-                     {
-                         string str_logid = tborder.Logid.ToString();
-                         int int_logid = int.Parse(str_logid);
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "2");
-                         this.ddlClassId.DataTextField = "LogisticsName";
-                         this.ddlClassId.DataValueField = "ID";
-                         this.ddlClassId.DataBind();
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.txtAddress.Text = logs.Address;
-                         this.txtLinkMan.Text = logs.LinkMan;
-
-                         this.txtMobie.Text = logs.Mobile;
-                         this.txtTel.Text = logs.Tel;
-                     }
-                     else if (tborder.Logid == 3)
-                     {
-                         string str_logid = tborder.Logid.ToString();
-                         int int_logid = int.Parse(str_logid);
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "3");
-                         this.ddlClassId.DataTextField = "LogisticsName";
-                         this.ddlClassId.DataValueField = "ID";
-                         this.ddlClassId.DataBind();
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.txtAddress.Text = logs.Address;
-                         this.txtLinkMan.Text = logs.LinkMan;
-
-                         this.txtMobie.Text = logs.Mobile;
-                         this.txtTel.Text = logs.Tel;
-                     }
-                     else if (tborder.Logid == 4)
-                     {
-                         string str_logid = tborder.Logid.ToString();
-                         int int_logid = int.Parse(str_logid);
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", " ID=" + "4");
-                         this.ddlClassId.DataTextField = "LogisticsName";
-                         this.ddlClassId.DataValueField = "ID";
-                         this.ddlClassId.DataBind();
-                         logs = logsbll.tbLogs_GetModel(str_logid);
-                         this.txtAddress.Text = logs.Address;
-                         this.txtLinkMan.Text = logs.LinkMan;
-
-                         this.txtMobie.Text = logs.Mobile;
-                         this.txtTel.Text = logs.Tel;
-                     }
-                     #endregion
-                     else
-                     {
-                         this.ddlClassId.Items.Insert(0, new ListItem("请选择", "0"));
-                         this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", null);
-                         this.ddlClassId.DataTextField = "LogisticsName";
-                         this.ddlClassId.DataValueField = "ID";
+                     //    this.txtMobie.Text = logs.Mobile;
+                     //    this.txtTel.Text = logs.Tel;
+                     //}
+                     
+                     //else
+                     //{
+                     //    this.ddlClassId.Items.Insert(0, new ListItem("请选择", "0"));
+                     //    this.ddlClassId.DataSource = comm.getDataByCondition("tbLogs", "ID,LogisticsName", null);
+                     //    this.ddlClassId.DataTextField = "LogisticsName";
+                     //    this.ddlClassId.DataValueField = "ID";
                         
-                         this.ddlClassId.DataBind();
-                         this.ddlClassId.AppendDataBoundItems = true;
-                         //ListItem list = new ListItem("请选择","-1");
-                         //this.ddlClassId.Items.Add(list);
-                         //list.Selected = true;
-                         //this.ddlClassId.Items.Insert(-1, list);
-                         this.ddlClassId.DataBind();
-                         
-                     }
+                     //    this.ddlClassId.DataBind();
+                     //    this.ddlClassId.AppendDataBoundItems = true;
+                     //    //ListItem list = new ListItem("请选择","-1");
+                     //    //this.ddlClassId.Items.Add(list);
+                     //    //list.Selected = true;
+                     //    //this.ddlClassId.Items.Insert(-1, list);
+                     //    this.ddlClassId.DataBind();
+
+                     //}
+                     //#endregion
 
                 }
                 else

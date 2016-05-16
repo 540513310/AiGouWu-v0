@@ -7,7 +7,7 @@ using Model.Orders;
 
 namespace AiGouWu.Admin.Orders
 {
-    public partial class logsedit: System.Web.UI.Page
+    public partial class logsedit-change: System.Web.UI.Page
     {
         SqlComm comm = new SqlComm();
         static tbLogs logs = new tbLogs();

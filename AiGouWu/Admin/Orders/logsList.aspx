@@ -29,7 +29,7 @@
 </head>
 <body style="padding:10px;">
     <form id="form1" runat="server">
-    <div class="navigation"><span class="add"><a href="#"></a></span><b>您当前的位置：首页 &gt; 订单管理 &gt; 物流信息列表</b></div>
+    <div class="navigation"><span class="add"><a href="logsAdd.aspx">添加物流公司</a></span><b>您当前的位置：首页 &gt; 订单管理 &gt; 物流信息列表</b></div>
     <div class="spClear"></div>
     <div class="spClear"></div>
 
@@ -71,7 +71,7 @@
                 <td align="center"><%#Eval("Tel")%></td>   
                 <td align="center"><%#Eval("Mobile")%></td>   
                               
-                <td align="center"><span><a href="logsedit.aspx?id=<%#Eval("id") %>">修改</a></span></td>
+                <td align="center"><span><a href="logseditchange.aspx?id=<%#Eval("ID") %>">修改</a></span></td>
       </tr>
       </ItemTemplate>
       <FooterTemplate>
