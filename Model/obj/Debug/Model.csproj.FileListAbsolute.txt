@@ -342,3 +342,4 @@ C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\Model\bin\Debug\
 C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\Model\obj\Debug\Model.dll
 C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\Model\obj\Debug\Model.pdb
 C:\Users\Joe Zhou\Desktop\AiGouWu\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Joe Zhou\Downloads\AiGouWu-v0-master\AiGouWu-v0-master\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
