@@ -14,10 +14,10 @@
 <script language="javascript" type="text/javascript" src="Scripts/topCommon.js"></script>
 <script language="javascript" type="text/javascript" src="Scripts/init.js"></script>
 <link href="Styles/Product.css" rel="stylesheet" type="text/css" />
-    <script src="Scripts/jquery.validate.js" type="text/javascript"></script>
+   <%-- <script src="Scripts/jquery.validate.js" type="text/javascript"></script>
     <script src="Scripts/ValidateMessage_ZW.js" type="text/javascript"></script>
     <script src="Scripts/jquery.metadata.js" type="text/javascript"></script>
-    <link href="Scripts/validateExtenderCss.css" rel="stylesheet" type="text/css" />
+    <link href="Scripts/validateExtenderCss.css" rel="stylesheet" type="text/css" />--%>
 <style type="text/css">
 .content{}
 .content h3{}
@@ -36,6 +36,54 @@
 </style>
 
 <script type="text/javascript">
+
+    //显示和隐藏客户点评及商品详情
+    function $(id) {
+        return document.getElementById(id);
+    }
+
+    
+
+    //显示对象
+    function showmenu(id) {
+        var obj1 = $(id);
+        obj1.style.display = "";
+    }
+    //隐藏对象
+    function hidenmenu(id) {
+        var obj = $(id);
+        obj.style.display = "none";
+    }
+    //鼠标移动到“客户点评”时，“商品详情”选项卡的样式改变
+
+
+    function dianping_mouseover(clas) {
+        clas.style.background = "url(../images/detail_bg.png) no-repeat -357px 0px";
+        
+
+//        $(this).removeClass(" detail_r4_tdiv").addClass("detail_r4_tcur");
+//        $(".detail_r4_tcur").removeClass("detail_r4_tcur").addClass(detail_r4_tdiv);
+    }
+    function dianping_mouseout(clas) {
+        clas.style.background = "url(../images/detail_bg.png) no-repeat -448px 0px";
+    }
+
+
+    function shangpin_mouseover(clas) {
+//        $(this).removeClass("detail_r4_tcur").addClass(detail_r4_tdiv);
+        //        $(".detail_r4_tdiv").removeClass("detail_r4_tdiv").addClass("detail_r4_tcur");
+
+        clas.style.background = "url(../images/detail_bg.png) no-repeat -357px 0px";
+        clas.Html = "商品详情";
+
+    }
+
+    function shangpin_mouseout(clas) {
+        clas.style.background = "url(../images/detail_bg.png) no-repeat -448px 0px";
+        clas.style.color = "#000";
+    }
+
+
     $(document).ready(function () {
         $("#form1").validate();
     });
@@ -216,9 +264,9 @@
             </div>
 </div>
     <div class="detail_r4_title">
-        <div class="detail_r4_tcur"  onmouseover="$('#tab1').show();$('#tab2').hide();">
+        <div id="pro_info" class="detail_r4_tcur"  onmouseover="showmenu('tab1');hidenmenu('tab2');shangpin_mouseover(this)" onmouseout="shangpin_mouseout(this)">
             商品详情</div>
-        <div class="detail_r4_tdiv" onmouseover="$('#tab2').show();$('#tab1').hide();">
+        <div id="customer_argument" class="detail_r4_tdiv" onmouseover="showmenu('tab2');hidenmenu('tab1');dianping_mouseover(this)"onmouseout="dianping_mouseout(this)">
             <a href="#">客户点评<span style="color: #ff0000"></span></a></div>
       
     </div>
