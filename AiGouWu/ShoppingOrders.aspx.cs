@@ -7,12 +7,14 @@ using System.Web.UI.WebControls;
 using BLL;
 using Model.Orders;
 using System.EnterpriseServices;
+using Model.Product;
 
 namespace AiGouWu
 {
     public partial class ShoppingOrders: System.Web.UI.Page
     {
         SqlComm sqlcom = new SqlComm();
+        ProBLL probll = new ProBLL();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -114,7 +116,49 @@ namespace AiGouWu
 
             };
          int ordersid=   orderbll.tbOrders_ADD(orders);
+         
+
+
          int count= orderbll.setorderprosbycid(int.Parse(Session["Cid"].ToString()), ordersid);
+
+
+
+
+         //ProBLL probll = new ProBLL();
+         //tbProduct model_pro = new tbProduct();
+         //model_pro= probll.GetModel(ordersid);
+         //int int_model_pro = int.Parse(model_pro.upperLimit.ToString());
+
+         //根据 ordersid从tbOrdersPros中选出ProID
+         System.Data.DataTable dt_proid = sqlcom.getDataByCondition("tbOrdersPros", "ProID", " OrderID=" + ordersid);
+         int procount = dt_proid.Rows.Count;
+         for (int i = 0; i < procount; i++)
+         {
+             string str_proid = dt_proid.Rows[i][0].ToString();
+             int int_proid = int.Parse(str_proid);
+             probll.Update_upperlimit(int_proid);
+             //从tbProduct查询出product_id为str_proid的库存量
+             //System.Data.DataTable dt_product = sqlcom.getDataByCondition("tbProduct", " upperLimit ", " product_id=" + int_proid);
+             //string product_count = dt_product.Rows[0][0].ToString();
+             //int int_product_count = int.Parse(product_count);
+             //ProBLL probll = new ProBLL();
+             //tbProduct model_pro = new tbProduct();
+             //model_pro = probll.GetModel(int_proid);
+             //int int_model_pro_upper = int.Parse(model_pro.upperLimit.ToString());
+             //库存数量减一
+             //int_model_pro_upper = int_model_pro_upper - 1;
+
+             //更新tbProduct中product_id为str_proid的库存量
+             //sqlcom.UpdateTableByCondition("dt_product", "upperLimit=upperLimit-1" , " where product_id=" + int_proid);
+
+
+         }
+
+
+
+
+
+
          int cartcount = sqlcom.UpdateTableByCondition("dbo.TbCat", " isOrders=1 ", " where isOrders=0 and isGoingBuy=1 and  Customerid=" + Session["Cid"].ToString());
          int ccount= sqlcom.UpdateTableByCondition("dbo.tbCustomer", "c_name='" + txtRealName.Text.Trim() + "',tel='" + orders.Tel + "',mobile='" + orders.Mobile + "',email='" + txtEmail.Text + "',link_men='" + txtOthors.Text + "',address='" + txtAddress.Text + "'", " where id=" + Session["Cid"].ToString());
         

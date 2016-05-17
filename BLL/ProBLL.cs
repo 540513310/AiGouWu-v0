@@ -111,6 +111,20 @@ namespace BLL
           
         }
 
+
+      //更新库存
+        public int Update_upperlimit(int proid)
+        {
+            SqlParameter[] parameters = {
+					new SqlParameter("@product_id", SqlDbType.Int,4)
+                                        };
+            parameters[0].Value = proid;
+            return dbhelper.ExcuteCommandReturnInt("change_pro_upperlimit", CommandType.StoredProcedure, parameters);
+
+
+        }
+
+
         /// <summary>
         /// 得到一个对象实体
         /// </summary>

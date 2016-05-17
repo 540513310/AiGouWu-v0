@@ -31,7 +31,7 @@ namespace AiGouWu.Admin.Products
                     this.Wholesale_price.Text = p.wholesale_price.ToString();
                     this.Weight.Text = p.weight;
                     this.Material.Text = p.material;
-                    this.UpperLimit.Text = p.upperLimit.ToString();
+                    this.UpperLimit.Text = p.upperLimit.ToString();//库存
                     this.LowerLimit.Text = p.lowerLimit.ToString();
                     this.Spec.Text = p.spec.ToString();
                     this.code.Text = p.code.ToString();
