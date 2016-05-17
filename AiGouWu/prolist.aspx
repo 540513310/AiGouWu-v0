@@ -140,8 +140,9 @@ DIV.scott SPAN.disabled {
                     </div>
                     <div id="catacontent" class="content" style=" min-height:220px; background-color:#fff;">
                        <div>               
-                        <asp:DataList runat="server" ID="datalist_catlist" RepeatColumns="3" 
-                               RepeatDirection="Horizontal" onitemdatabound="datalist_catlist_ItemDataBound">
+                        <asp:DataList runat="server" ID="datalist_catlist" RepeatColumns="2" 
+                               RepeatDirection="Horizontal" 
+                               onitemdatabound="datalist_catlist_ItemDataBound" Width="741px">
                             <ItemStyle HorizontalAlign="Left" VerticalAlign="Top" />
                         <ItemTemplate>
                          <div class="cattitle"><%#Eval("catalogname")%></div>
@@ -261,7 +262,7 @@ DIV.scott SPAN.disabled {
           </div>
 
         <div class="right">
-            <div class="tips1">
+           <%-- <div class="tips1">
                 <a href="#">
                     <img src="images/novice.gif"></a><a href="#"><img src="images/open.gif"></a></div>
             <div class="tips2">
@@ -283,7 +284,7 @@ DIV.scott SPAN.disabled {
             <div class="tips4">
                 <a class="b1" title="交易安全" href="#">交易安全</a> <a class="b2" title="免费注册" href="#">免费注册</a>
                 <a class="b3" title="1分钱体验" href="#">1分钱体验</a>
-            </div>
+            </div>--%>
             <div class="prepaid">
                 <div class="title">
                     <strong>人气排行</strong>
@@ -322,7 +323,7 @@ DIV.scott SPAN.disabled {
             </div>
             <div class="prepaidimg">
                 <a href="#">
-                    <img src="images/ad.jpg"></a></div>
+                    <%--<img src="images/ad.jpg">--%></a></div>
         </div>
     </div>
     &nbsp;<uc2:footer ID="footer1" runat="server" />
