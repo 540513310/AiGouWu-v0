@@ -219,7 +219,7 @@ DIV.scott SPAN.disabled {
                          <div class="w360 proInfo">
                            <h3><a href="Product.aspx?proid=<%#Eval("Product_id") %>"><%#Eval("product_name")%></a></h3>
                            <p>
-                            <span>产品简介:</span><span><%#Eval("description").ToString().Replace("<img>","")%></span></p>
+                            <span>产品简介:</span><%--<span><%#Eval("description").ToString().Replace("<img>","")%></span>--%></p>
                          </div>
                          <div class="w60">
                           <span style=" text-decoration:line-through;">￥<%#decimal.Parse(Eval("retail_price").ToString()).ToString("0.00")%></span></div>
